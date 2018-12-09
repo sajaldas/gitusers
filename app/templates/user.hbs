@@ -1,0 +1,24 @@
+<div class="row detailpage">
+    <div class="col1">
+        <div class="avatar">
+            <img src="{{model.avatar_url}}">
+        </div>
+    </div>
+    <div class="col2">
+        <span class="text1">{{model.login}}</span>
+        <span class="text2">{{model.type}}</span>
+    </div>
+    <div class="col3">
+        <button type="button" class="btn" {{action "goBack" on="click"}}>Back</button>
+    </div>
+</div>
+<div class="row itemdetail">      
+    <table width="100%">
+        {{#each-in model as |key value|}} 
+        <tr>
+            <td width="30%">{{key}}</td>
+            <td>{{value}}</td>
+        </tr> 
+        {{/each-in}}       
+    </table>
+</div>

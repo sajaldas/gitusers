@@ -1,0 +1,28 @@
+body{margin:0; padding: 0;}
+.header{height: 70px; background-color: #1d75bb;}
+.footer{height: 60px; background-color: #000000; color: #ffffff; font-family: Arial, Helvetica, sans-serif;}
+.header img{height: 89%; border: 2px solid #fff; border-radius: 50%; margin: 4px;}
+.footer center{padding: 20px;}
+
+.container{min-height: 550px; width: 75%; margin: 0 auto 20px auto;}
+.searchbox{margin: 30px 0 35px 0; position: relative;}
+.searchbox span{position: absolute; top: 6px; right: 10px;}
+
+.item { border: 1px solid #ddd; margin-bottom: 15px;}
+.avatar {height: 170px; display: block; margin-bottom: 10px; margin-top: 15px;}
+.avatar img { height: 100%; margin: 0 auto; display: block; }
+.text1{text-align: center; display: block; font-size: 14px; font-weight: bold; color: #000000; margin-bottom: 5px;}
+.text2{text-align: center; display: block; font-size: 14px; font-weight: normal; color: #cccccc; margin-bottom: 10px;}
+.btnbox{text-align: center; margin-bottom: 20px;}
+.space{margin-right: 10px;}
+.detailpage{display: flex; border-bottom: 1px solid #ddd;}
+.detailpage .avatar{height: 140px;}
+.detailpage .text1, .detailpage .text2 {text-align: left;}
+.col1 { flex: 1; }
+.col2 { flex: 2; padding-top: 50px; margin: 30px 0 0 25px;}
+.col3 { flex: 11; text-align: right; padding-top: 50px; margin: 30px 0 0 0; }
+
+.itemdetail table { width: 98%; margin: 0 auto; background: #f5f5f4;}
+.itemdetail table td { padding: 4px; border: 1px solid #ddd; }
+.shortlist { border: 1px solid #ddd; width: 100%; margin: 0 auto; padding-bottom: 10px; }
+.shortlist .shead { background: #3e3e3e; color: #fff; padding: 8px 8px; margin-bottom: 15px; display: block; }
