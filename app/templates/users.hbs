@@ -1,4 +1,4 @@
-{{search-box value=""}}
+{{search-box updateList="updateList"}}
 
 <div class="row">
     {{#each model as |user index|}}
@@ -11,18 +11,18 @@
             {{#link-to 'user' user.login}}<span class="text1">{{user.login}}</span>{{/link-to}}
             <span class="text2">{{user.type}}</span>
             <div class="btnbox">
-                <button type="button" class="btn btn-primary space" {{action "shortlist" user}}>Add</button>                
+                <button type="button" class="btn btn-primary space" {{action "shortlist" user}}>Add</button>
                 <button type="button" class="btn">Cancel</button>
-            </div>            
-        </div>        
-    </div>  
-    {{/if}}  
-    {{/each}}    
+            </div>
+        </div>
+    </div>
+    {{/if}}
+    {{/each}}
 </div>
 
-<div class="row shortlist">    
+<div class="row shortlist">
     <div class="shead">Shortlisted</div>
-    {{#each-in shortList as |key value|}}     
+    {{#each-in shortList as |key value|}}
     <div class="col-sm-3">
         <div class="item">
             <div class="avatar">
@@ -30,10 +30,10 @@
             </div>
             {{#link-to 'user' value.loginId}}<span class="text1">{{value.loginId}}</span>{{/link-to}}
             <span class="text2">{{value.userType}}</span>
-            <div class="btnbox">                
+            <div class="btnbox">
                 <button type="button" class="btn" {{action "removeFromList" value.loginId}}>Remove</button>
-            </div>            
-        </div>        
-    </div> 
+            </div>
+        </div>
+    </div>
     {{/each-in}}
 </div>

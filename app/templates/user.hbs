@@ -12,13 +12,13 @@
         <button type="button" class="btn" {{action "goBack" on="click"}}>Back</button>
     </div>
 </div>
-<div class="row itemdetail">      
+<div class="row itemdetail">
     <table width="100%">
-        {{#each-in model as |key value|}} 
+        {{#each-in model as |key value|}}
         <tr>
             <td width="30%">{{key}}</td>
             <td>{{value}}</td>
-        </tr> 
-        {{/each-in}}       
+        </tr>
+        {{/each-in}}
     </table>
 </div>

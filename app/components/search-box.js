@@ -7,8 +7,12 @@ export default Component.extend({
 
     actions:{
         handleFilter(){
-            let filterInputValue = this.get('value');
-            console.log('filterInputValue = ', filterInputValue);
+            let gitApiUrl = "https://api.github.com/users/"+this.get('srchvalu');
+            return this.get('ajax').request(gitApiUrl, {
+                method: 'GET',
+              }).then((response) => {
+                this.sendAction('updateList', response);
+            });
         }
     }
 });
